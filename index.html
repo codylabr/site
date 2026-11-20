@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Codyla · Código que resolve</title>
+<meta name="description" content="O Codyla desenvolve sistemas web simples para resolver tarefas do dia a dia das empresas. Conheça o Folga Fácil, o montador de escala de folgas.">
+<meta property="og:title" content="Codyla · Código que resolve">
+<meta property="og:description" content="O Codyla desenvolve sistemas web simples para resolver tarefas do dia a dia das empresas. Conheça o Folga Fácil, o montador de escala de folgas.">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preload" href="fonts/mona-sans.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<header class="topo">
+  <div class="container">
+    <a href="index.html" class="logo"><img src="img/logo-branco.png" alt="Codyla, página inicial" width="480" height="342"></a>
+    <button class="botao-menu" type="button" aria-expanded="false" aria-controls="navegacao">Menu</button>
+    <div class="navegacao" id="navegacao">
+      <nav aria-label="Principal">
+        <ul class="menu">
+          <li><a href="folga-facil.html">Folga Fácil</a></li>
+          <li><a href="index.html#sobre">Sobre</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+      <a class="botao botao-claro botao-pequeno" href="contato.html?assunto=testar">Quero testar</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="abertura" aria-labelledby="titulo">
+    <div class="container">
+      <div>
+        <h1 id="titulo">Código que resolve.</h1>
+        <p>O Codyla desenvolve sistemas web simples para tarefas que hoje tomam tempo demais nas empresas.</p>
+        <div class="botoes">
+          <a class="botao botao-claro" href="folga-facil.html">Conhecer o Folga Fácil</a>
+          <a class="botao botao-contorno" href="contato.html">Falar com o Codyla</a>
+        </div>
+      </div>
+      <figure class="escala" aria-label="Exemplo de escala de folgas montada pelo Folga Fácil">
+        <div class="escala-cab"><strong>Escala da semana</strong><span>Equipe da loja</span></div>
+        <div class="grade" id="grade"></div>
+        <figcaption class="escala-legenda">
+          <span><i style="background:var(--gelo)"></i>Trabalho</span>
+          <span><i style="background:var(--vivo)"></i>Folga</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section aria-labelledby="titulo-problema">
+    <div class="container">
+      <h2 id="titulo-problema">Tarefas que se repetem todo mês merecem um sistema</h2>
+      <p class="intro">Muita empresa ainda resolve a rotina com planilha, papel e conta de cabeça. Funciona, mas toma horas e abre espaço para erro.</p>
+      <div class="comparacao">
+        <div class="antes">
+          <h3>Do jeito de sempre</h3>
+          <ul>
+            <li>Planilha montada do zero todo mês</li>
+            <li>Regras que só uma pessoa sabe de cabeça</li>
+            <li>Erros que só aparecem quando alguém reclama</li>
+            <li>Horas gastas em tarefa que não muda</li>
+          </ul>
+        </div>
+        <div class="depois">
+          <h3>Com um sistema do Codyla</h3>
+          <ul>
+            <li>O sistema faz a parte repetitiva</li>
+            <li>As regras ficam registradas e são seguidas sempre</li>
+            <li>Resultado conferido antes de chegar na equipe</li>
+            <li>Tempo livre para o que precisa de atenção</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="fundo-branco" aria-labelledby="titulo-produtos">
+    <div class="container">
+      <h2 id="titulo-produtos">Produtos</h2>
+      <p class="intro">Cada sistema do Codyla resolve uma tarefa específica e pode ser usado desde o primeiro dia, sem treinamento.</p>
+      <div class="produtos">
+        <article class="produto produto-destaque">
+          <span class="status">Em fase de testes</span>
+          <h3>Folga Fácil</h3>
+          <p>Monta a escala de folgas da equipe em minutos, seguindo as regras da sua empresa. Feito para o RH, o Departamento Pessoal e os gestores de equipe.</p>
+          <a class="botao botao-claro" href="folga-facil.html">Ver o Folga Fácil</a>
+        </article>
+        <article class="produto produto-futuro">
+          <h3>Próximos sistemas</h3>
+          <p>Novas ferramentas estão em desenvolvimento. Tem uma tarefa na sua empresa que poderia virar sistema? <a href="contato.html?assunto=ideia">Conte para a gente</a>.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sobre fundo-gelo" id="sobre" aria-labelledby="titulo-sobre">
+    <div class="container">
+      <img src="img/logo-navy.png" alt="" width="480" height="342">
+      <div>
+        <h2 id="titulo-sobre">Sobre o Codyla</h2>
+        <p>O Codyla é uma empresa de desenvolvimento de software. Criamos sistemas web para tarefas que se repetem todo mês e ainda dependem de planilha, papel ou conta de cabeça.</p>
+        <p>O Folga Fácil foi o primeiro: nasceu de quem conhece por dentro a rotina do Departamento Pessoal e sabia quanto tempo a escala de folgas tomava. Todo sistema do Codyla segue a mesma ideia: ser simples a ponto de qualquer pessoa usar desde o primeiro dia.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="chamada" aria-labelledby="titulo-chamada">
+    <div class="container">
+      <div>
+        <h2 id="titulo-chamada">Quer testar o Folga Fácil na sua empresa?</h2>
+        <p>Estamos selecionando empresas para usar o sistema na fase de testes. Conte como é a escala da sua equipe.</p>
+      </div>
+      <a class="botao botao-claro" href="contato.html?assunto=testar">Quero testar</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="rodape-grade">
+      <div>
+        <img src="img/logo-branco.png" alt="Codyla" width="480" height="342">
+        <p>Sistemas web simples para tarefas do dia a dia das empresas.</p>
+      </div>
+      <div>
+        <h3>Produtos</h3>
+        <ul><li><a href="folga-facil.html">Folga Fácil</a></li></ul>
+      </div>
+      <div>
+        <h3>Codyla</h3>
+        <ul>
+          <li><a href="index.html#sobre">Sobre</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Legal</h3>
+        <ul><li><a href="privacidade.html">Política de privacidade</a></li></ul>
+      </div>
+    </div>
+    <div class="rodape-base">© <span class="ano">2026</span> Codyla · codyla.com.br</div>
+  </div>
+</footer>
+
+<script src="js/site.js"></script>
+</body>
+</html>

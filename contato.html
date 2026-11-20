@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contato | Codyla</title>
+<meta name="description" content="Fale com o Codyla: teste o Folga Fácil na sua empresa ou conte uma tarefa que poderia virar sistema.">
+<meta property="og:title" content="Contato | Codyla">
+<meta property="og:description" content="Fale com o Codyla: teste o Folga Fácil na sua empresa ou conte uma tarefa que poderia virar sistema.">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preload" href="fonts/mona-sans.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<header class="topo">
+  <div class="container">
+    <a href="index.html" class="logo"><img src="img/logo-branco.png" alt="Codyla, página inicial" width="480" height="342"></a>
+    <button class="botao-menu" type="button" aria-expanded="false" aria-controls="navegacao">Menu</button>
+    <div class="navegacao" id="navegacao">
+      <nav aria-label="Principal">
+        <ul class="menu">
+          <li><a href="folga-facil.html">Folga Fácil</a></li>
+          <li><a href="index.html#sobre">Sobre</a></li>
+          <li><a href="contato.html" aria-current="page">Contato</a></li>
+        </ul>
+      </nav>
+      <a class="botao botao-claro botao-pequeno" href="contato.html?assunto=testar">Quero testar</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="abertura abertura-curta" aria-labelledby="titulo">
+    <div class="container">
+      <h1 id="titulo">Fale com o Codyla</h1>
+      <p>Quer testar o Folga Fácil ou tem uma tarefa na sua empresa que gostaria de transformar em sistema? Preencha o formulário e responderemos por e-mail.</p>
+    </div>
+  </section>
+
+  <section aria-label="Formulário de contato">
+    <div class="container contato-grade">
+      <div class="contato-lado">
+        <h2>Como podemos ajudar</h2>
+        <p><strong>Testar o Folga Fácil</strong>Conte quantas pessoas estão na escala e como são as folgas hoje.</p>
+        <p><strong>Ideia de sistema</strong>Descreva a tarefa que se repete na sua empresa e quanto tempo ela toma.</p>
+        <p><strong>Outros assuntos</strong>Parcerias, dúvidas ou qualquer outra conversa.</p>
+      </div>
+
+      <!-- O FormSubmit recebe o formulário e manda por e-mail para o Codyla -->
+      <form name="contato" method="POST" action="https://formsubmit.co/contato.codyla@gmail.com">
+        <input type="hidden" name="_subject" value="Novo contato pelo site codyla.com.br">
+        <input type="hidden" name="_next" value="https://codyla.com.br/obrigado.html">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <p class="escondido"><label>Não preencha: <input name="_honey" tabindex="-1" autocomplete="off"></label></p>
+        <label>Assunto
+          <select name="assunto" required>
+            <option value="testar">Quero testar o Folga Fácil</option>
+            <option value="ideia">Tenho uma ideia de sistema</option>
+            <option value="outro">Outro assunto</option>
+          </select>
+        </label>
+        <div class="duas">
+          <label>Nome<input type="text" name="nome" autocomplete="name" required></label>
+          <label>E-mail<input type="email" name="email" autocomplete="email" required></label>
+        </div>
+        <div class="duas">
+          <label><span>WhatsApp <small>(opcional)</small></span><input type="tel" name="whatsapp" autocomplete="tel" placeholder="(21) 90000-0000"></label>
+          <label>Empresa<input type="text" name="empresa" autocomplete="organization"></label>
+        </div>
+        <div class="duas">
+          <label><span>CNPJ <small>(opcional)</small></span><input type="text" name="cnpj" inputmode="numeric" placeholder="00.000.000/0000-00"></label>
+          <label>Funcionários
+            <select name="funcionarios">
+              <option value="">Selecione</option>
+              <option>1 a 10</option>
+              <option>11 a 50</option>
+              <option>51 a 200</option>
+              <option>Mais de 200</option>
+            </select>
+          </label>
+        </div>
+        <label>Mensagem<textarea name="mensagem" required></textarea></label>
+        <label class="aceite"><input type="checkbox" name="aceite" required> <span>Concordo com o uso dos meus dados para receber o retorno do Codyla, conforme a <a href="privacidade.html">política de privacidade</a>.</span></label>
+        <button class="botao botao-escuro" type="submit">Enviar mensagem</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="rodape-grade">
+      <div>
+        <img src="img/logo-branco.png" alt="Codyla" width="480" height="342">
+        <p>Sistemas web simples para tarefas do dia a dia das empresas.</p>
+      </div>
+      <div>
+        <h3>Produtos</h3>
+        <ul><li><a href="folga-facil.html">Folga Fácil</a></li></ul>
+      </div>
+      <div>
+        <h3>Codyla</h3>
+        <ul>
+          <li><a href="index.html#sobre">Sobre</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Legal</h3>
+        <ul><li><a href="privacidade.html">Política de privacidade</a></li></ul>
+      </div>
+    </div>
+    <div class="rodape-base">© <span class="ano">2026</span> Codyla · codyla.com.br</div>
+  </div>
+</footer>
+
+<script src="js/site.js"></script>
+</body>
+</html>
