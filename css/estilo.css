@@ -225,3 +225,127 @@ footer{background:var(--noite);color:var(--gelo);padding:4rem 0 2rem;font-size:.
   .comparacao > div,.produto{padding:1.6rem}
   .rodape-grade{grid-template-columns:1fr}
 }
+
+/* ---------- Sistema sob medida ---------- */
+.sob-medida .container{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+.sob-medida-texto p{color:var(--texto-suave);font-size:1.1rem;max-width:48ch;margin-bottom:2rem}
+.etapas{list-style:none;counter-reset:passo;display:grid;gap:0;border-left:2px solid var(--linha)}
+.etapas li{counter-increment:passo;position:relative;padding:0 0 2rem 3.25rem;color:var(--texto-suave)}
+.etapas li:last-child{padding-bottom:0}
+.etapas li::before{content:counter(passo);position:absolute;left:-1.1rem;top:-.15rem;width:2.2rem;height:2.2rem;border-radius:50%;
+  background:var(--royal);color:var(--branco);font-weight:700;display:grid;place-items:center;font-size:.95rem;box-shadow:0 0 0 6px var(--fundo)}
+.etapas strong{display:block;color:var(--texto);font-size:1.1rem;margin-bottom:.2rem}
+@media (max-width:900px){.sob-medida .container{grid-template-columns:1fr;gap:2.5rem}}
+.sob-medida-texto p{margin-bottom:1rem}
+.dores{list-style:none;display:grid;gap:.7rem;margin:0 0 1.5rem;max-width:52ch}
+.dores li{position:relative;padding-left:1.6rem;font-size:1.05rem;color:var(--texto)}
+.dores li::before{content:"";position:absolute;left:0;top:.55em;width:.6rem;height:.6rem;border-radius:2px;background:var(--vivo)}
+.sob-medida-texto p.virada{color:var(--texto);font-weight:500;margin-bottom:2rem}
+
+/* ---------- Preços ---------- */
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.calculadora{
+  display:flex;flex-wrap:wrap;gap:2rem 3rem;align-items:flex-end;justify-content:space-between;
+  background:var(--branco);border:1px solid var(--linha);border-radius:16px;padding:1.75rem 2rem;margin-bottom:2.5rem;
+}
+.calc-campo{flex:1 1 360px;display:grid;gap:.6rem}
+.calc-campo > label{font-size:1rem}
+.calc-numero{display:flex;align-items:center;gap:1.25rem}
+.calc-numero input[type=range]{flex:1;padding:0;border:0;background:none;accent-color:var(--royal);height:2rem}
+.calc-numero output{font-weight:700;font-size:1.25rem;min-width:9.5rem;text-align:right;font-variant-numeric:tabular-nums}
+.calc-periodo{border:0;display:flex;gap:.5rem;flex-wrap:wrap}
+.calc-periodo legend{font-weight:600;font-size:.95rem;margin-bottom:.6rem}
+.calc-periodo label{
+  display:flex;align-items:center;gap:.5rem;font-weight:600;cursor:pointer;
+  border:1.5px solid var(--linha);border-radius:var(--raio);padding:.65rem 1rem;min-height:44px;background:var(--fundo);
+}
+.calc-periodo label:has(input:checked){border-color:var(--royal);background:var(--gelo)}
+.calc-periodo input{width:auto;accent-color:var(--royal)}
+.selo-desconto{font-size:.8rem;font-weight:700;color:var(--royal);background:var(--branco);border-radius:99px;padding:.1rem .55rem}
+
+.planos{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;align-items:stretch}
+.plano{
+  position:relative;display:flex;flex-direction:column;gap:.5rem;
+  background:var(--branco);border:1px solid var(--linha);border-radius:16px;padding:2rem;
+}
+.plano h3{font-size:1.35rem;margin-bottom:0}
+.plano-para{color:var(--texto-suave);min-height:3.2em}
+.plano-preco{display:flex;align-items:baseline;gap:.3rem;margin-top:.75rem}
+.plano-preco strong{font-size:2.6rem;font-weight:700;letter-spacing:-.03em;line-height:1;font-variant-numeric:tabular-nums}
+.plano-preco span{color:var(--texto-suave);font-weight:500}
+.plano-pagamento{font-size:.9rem;color:var(--texto-suave);min-height:2.9em}
+.plano-itens{list-style:none;display:grid;gap:.6rem;margin:1rem 0 1.75rem;flex:1}
+.plano-itens li{position:relative;padding-left:1.6rem}
+.plano-itens li::before{content:"";position:absolute;left:0;top:.5em;width:.7rem;height:.7rem;border-radius:3px;background:var(--vivo)}
+.plano .botao{align-self:stretch}
+.plano-destaque{background:linear-gradient(160deg,var(--royal),var(--noite));color:var(--branco);border-color:transparent;box-shadow:0 30px 60px -35px rgba(5,18,52,.7)}
+.plano-destaque .plano-para,.plano-destaque .plano-preco span,.plano-destaque .plano-pagamento{color:var(--gelo)}
+.plano-selo{position:absolute;top:-.8rem;left:2rem;background:var(--vivo);color:var(--noite);font-size:.82rem;font-weight:700;border-radius:99px;padding:.25rem .8rem}
+.botao-contorno-escuro{border-color:var(--royal);color:var(--royal);background:transparent}
+.botao-contorno-escuro:hover{background:var(--gelo)}
+.nota-exemplo{margin-top:1.25rem;font-size:.9rem;color:var(--texto-suave)}
+
+.implantacao{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
+.implantacao li{display:flex;flex-direction:column;gap:.4rem;border:1px solid var(--linha);border-radius:16px;padding:1.75rem;background:var(--fundo)}
+.implantacao strong{font-size:1.15rem}
+.implantacao span{color:var(--texto-suave);flex:1}
+.impl-preco{margin-top:.75rem;padding-top:.9rem;border-top:1px solid var(--linha)}
+.impl-preco b{font-size:1.3rem;font-variant-numeric:tabular-nums}
+.impl-preco small{display:block;color:var(--texto-suave);font-size:.9rem}
+
+.video-grade{display:grid;grid-template-columns:1fr 1.15fr;gap:3.5rem;align-items:center}
+.video-grade .intro{margin-bottom:0}
+.video-moldura{
+  aspect-ratio:16/9;border-radius:16px;display:grid;place-items:center;align-content:center;gap:.9rem;
+  background:linear-gradient(120deg,var(--noite),var(--royal));color:var(--gelo);
+}
+.video-play{width:4.5rem;height:4.5rem;border-radius:50%;background:var(--branco);color:var(--royal);display:grid;place-items:center;padding-left:.25rem}
+.video-moldura figcaption{font-weight:600;font-size:.95rem}
+
+@media (max-width:900px){
+  .planos,.implantacao,.video-grade{grid-template-columns:1fr}
+  .plano-para,.plano-pagamento{min-height:0}
+  .plano-destaque{order:-1}
+  .video-grade{gap:2rem}
+}
+@media (max-width:520px){
+  .calculadora{padding:1.4rem}
+  .calc-numero{flex-wrap:wrap;gap:.25rem}
+  .calc-numero input[type=range]{flex-basis:100%}
+  .calc-numero output{text-align:left;min-width:0}
+}
+
+/* ---------- Proposta (o que o cliente recebe pelo link) ---------- */
+.faixa-exemplo{background:var(--gelo);color:var(--royal);text-align:center;font-size:.88rem;font-weight:600;line-height:2.4rem;height:2.4rem;padding:0 1rem;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+.topo-proposta{top:2.4rem}
+.botao-zap{display:inline-flex;align-items:center;justify-content:center;gap:.5rem}
+.abertura-proposta p{max-width:58ch}
+.proposta-valores{display:grid;grid-template-columns:1.2fr 1fr;gap:1.25rem;margin-bottom:2rem}
+.valor-bloco{border:1px solid var(--linha);border-radius:16px;padding:1.75rem 2rem;background:var(--branco);display:grid;gap:.4rem}
+.valor-principal{background:linear-gradient(160deg,var(--royal),var(--noite));color:var(--branco);border-color:transparent}
+.valor-rotulo{font-weight:600;font-size:.95rem}
+.valor-principal .valor-rotulo,.valor-principal .valor-detalhe,.valor-principal .valor-numero span{color:var(--gelo)}
+.valor-numero{display:flex;align-items:baseline;gap:.5rem;flex-wrap:wrap}
+.valor-numero strong{font-size:2.6rem;font-weight:700;letter-spacing:-.03em;line-height:1.1;font-variant-numeric:tabular-nums}
+.valor-numero span{color:var(--texto-suave);font-weight:500}
+.valor-detalhe{color:var(--texto-suave);font-size:.95rem}
+.proposta-acoes{display:flex;flex-wrap:wrap;gap:.75rem}
+.proposta-acoes[hidden],.proximos-passos[hidden],.form-ajustes[hidden],.aviso-proposta[hidden]{display:none}
+.form-ajustes{margin-top:1.25rem;max-width:640px}
+.aviso-proposta{margin-top:1.25rem;background:var(--gelo);color:var(--noite);border-radius:var(--raio);padding:1rem 1.25rem;font-weight:500;max-width:640px}
+.proximos-passos{border:1px solid var(--linha);border-radius:16px;background:var(--branco);padding:2.25rem;max-width:760px;display:grid;gap:1.25rem}
+.proximos-passos:focus{outline:none}
+.proximos-passos h2{margin-bottom:.25rem}
+.proximos-passos .status{justify-self:start;margin-bottom:0}
+.proximos-passos .etapas li::before{box-shadow:0 0 0 6px var(--branco)}
+.proximos-passos .botao{justify-self:start}
+footer .rodape-base a{color:var(--gelo)}
+.rodape-proposta{padding:1.5rem 0}
+.rodape-proposta .rodape-base{border-top:0;padding-top:0}
+@media (max-width:900px){.proposta-valores{grid-template-columns:1fr}}
+@media (max-width:520px){
+  .topo-proposta .botao-zap{font-size:0;gap:0;padding:.55rem .7rem}
+  .topo-proposta .botao-zap svg{width:20px;height:20px}
+  .proposta-acoes .botao{flex:1 1 100%}
+  .proximos-passos{padding:1.5rem}
+}

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Preços do Codyla Folgas · Planos por funcionário | Codyla</title>
+<meta name="description" content="Planos do Codyla Folgas por número de funcionários na escala. Veja quanto custa para a sua equipe, no mensal ou no anual, e como funciona a implantação.">
+<meta property="og:title" content="Preços do Codyla Folgas">
+<meta property="og:description" content="Planos por número de funcionários na escala, no mensal ou no anual.">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preload" href="fonts/mona-sans.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<header class="topo">
+  <div class="container">
+    <a href="index.html" class="logo"><img src="img/logo-branco.png" alt="Codyla, página inicial" width="480" height="342"></a>
+    <button class="botao-menu" type="button" aria-expanded="false" aria-controls="navegacao">Menu</button>
+    <div class="navegacao" id="navegacao">
+      <nav aria-label="Principal">
+        <ul class="menu">
+          <li><a href="codyla-folgas.html">Codyla Folgas</a></li>
+          <li><a href="precos.html" aria-current="page">Preços</a></li>
+          <li><a href="index.html#sobre">Sobre</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+      <a class="botao botao-claro botao-pequeno" href="contato.html?assunto=testar">Pedir proposta</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="abertura abertura-curta" aria-labelledby="titulo">
+    <div class="container">
+      <span class="status">Valores de exemplo · em definição</span>
+      <h1 id="titulo">Você paga pelo tamanho da sua equipe.</h1>
+      <p>O valor do Codyla Folgas acompanha o número de funcionários na escala. Escolha quantas pessoas a sua empresa tem e veja quanto fica por mês.</p>
+    </div>
+  </section>
+
+  <section aria-labelledby="titulo-planos">
+    <div class="container">
+      <div class="calculadora">
+        <div class="calc-campo">
+          <label for="funcionarios">Funcionários na escala</label>
+          <div class="calc-numero">
+            <input type="range" id="funcionarios" min="10" max="300" step="5" value="40" aria-describedby="funcionarios-valor">
+            <output id="funcionarios-valor" for="funcionarios">40 funcionários</output>
+          </div>
+        </div>
+        <fieldset class="calc-periodo">
+          <legend>Forma de contratação</legend>
+          <label><input type="radio" name="periodo" value="mensal" checked> Mensal</label>
+          <label><input type="radio" name="periodo" value="anual"> Anual <span class="selo-desconto">15% menos</span></label>
+        </fieldset>
+      </div>
+
+      <h2 id="titulo-planos" class="sr-only">Planos</h2>
+      <div class="planos" id="planos">
+        <article class="plano" data-por-funcionario="2.70">
+          <h3>Essencial</h3>
+          <p class="plano-para">Para quem monta a escala sozinho e quer o básico bem feito.</p>
+          <p class="plano-preco"><strong data-preco>R$ 108</strong><span>/mês</span></p>
+          <p class="plano-pagamento" data-pagamento>R$ 2,70 por funcionário, cobrado todo mês</p>
+          <ul class="plano-itens">
+            <li>Escala do mês com as regras da empresa</li>
+            <li>Férias, licenças e feriados na escala</li>
+            <li>Impressão para o mural</li>
+            <li>Suporte por e-mail</li>
+          </ul>
+          <a class="botao botao-contorno-escuro" href="contato.html?assunto=testar">Pedir proposta</a>
+        </article>
+
+        <article class="plano plano-destaque" data-por-funcionario="3.00">
+          <span class="plano-selo">Mais escolhido</span>
+          <h3>Recomendado</h3>
+          <p class="plano-para">Para o RH e o DP que querem tirar dúvidas na hora.</p>
+          <p class="plano-preco"><strong data-preco>R$ 120</strong><span>/mês</span></p>
+          <p class="plano-pagamento" data-pagamento>R$ 3,00 por funcionário, cobrado todo mês</p>
+          <ul class="plano-itens">
+            <li>Tudo do Essencial</li>
+            <li>Suporte por e-mail e WhatsApp</li>
+            <li>Ajuda para montar a primeira escala</li>
+          </ul>
+          <a class="botao botao-claro" href="contato.html?assunto=testar">Pedir proposta</a>
+        </article>
+
+        <article class="plano" data-por-funcionario="3.90">
+          <h3>Prioritário</h3>
+          <p class="plano-para">Para equipes grandes ou com escalas mais complicadas.</p>
+          <p class="plano-preco"><strong data-preco>R$ 156</strong><span>/mês</span></p>
+          <p class="plano-pagamento" data-pagamento>R$ 3,90 por funcionário, cobrado todo mês</p>
+          <ul class="plano-itens">
+            <li>Tudo do Recomendado</li>
+            <li>Atendimento prioritário</li>
+            <li>Ajuste da escala junto com você todo mês</li>
+          </ul>
+          <a class="botao botao-contorno-escuro" href="contato.html?assunto=testar">Pedir proposta</a>
+        </article>
+      </div>
+      <p class="nota-exemplo">Valores de exemplo, ainda em definição. Os valores finais vêm na proposta para a sua empresa.</p>
+    </div>
+  </section>
+
+  <section class="fundo-branco" aria-labelledby="titulo-implantacao">
+    <div class="container">
+      <h2 id="titulo-implantacao">Implantação: você escolhe quanto quer de ajuda</h2>
+      <p class="intro">É paga uma vez só, no começo. Os valores abaixo já consideram <span data-func-texto>40 funcionários</span>.</p>
+      <ul class="implantacao" id="implantacao">
+        <li>
+          <strong>Só o acesso</strong>
+          <span>Você mesmo cadastra a equipe. Mandamos um vídeo com o passo a passo.</span>
+          <p class="impl-preco"><b>Sem custo</b></p>
+        </li>
+        <li data-por-funcionario="3" data-fixo="0">
+          <strong>Cadastro da equipe</strong>
+          <span>Você manda a planilha dos funcionários e a gente cadastra tudo para você.</span>
+          <p class="impl-preco" data-impl></p>
+        </li>
+        <li data-por-funcionario="3" data-fixo="400">
+          <strong>Cadastro e treinamento</strong>
+          <span>Cadastramos a equipe e treinamos quem vai usar, montando a primeira escala junto.</span>
+          <p class="impl-preco" data-impl></p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section aria-labelledby="titulo-video">
+    <div class="container video-grade">
+      <div>
+        <h2 id="titulo-video">Veja como funciona antes de decidir</h2>
+        <p class="intro">Em poucos minutos, o Flavio, fundador do Codyla, mostra uma escala sendo montada do começo ao fim: o cadastro, as regras e a escala pronta para imprimir.</p>
+      </div>
+      <figure class="video-moldura" aria-label="Vídeo de apresentação do Codyla Folgas, em gravação">
+        <div class="video-play" aria-hidden="true"><svg viewBox="0 0 24 24" width="30" height="30"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></div>
+        <figcaption>Vídeo em gravação</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="fundo-gelo" aria-labelledby="titulo-contratar">
+    <div class="container">
+      <h2 id="titulo-contratar">Como é a contratação</h2>
+      <p class="intro">Sem formulário longo e sem compromisso até você aprovar a proposta.</p>
+      <ol class="passos">
+        <li><h3>Você conta como é a escala</h3><p>Pelo WhatsApp ou pelo formulário: quantas pessoas, quais turnos e quais regras.</p></li>
+        <li><h3>Recebe a proposta por link</h3><p>Com o plano, a implantação e o valor para a sua equipe. Você aprova ou pede ajustes ali mesmo.</p></li>
+        <li><h3>Começa a usar</h3><p>Criamos o seu acesso e, conforme a implantação escolhida, montamos a primeira escala com você.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section aria-labelledby="titulo-perguntas">
+    <div class="container">
+      <h2 id="titulo-perguntas">Perguntas sobre os valores</h2>
+      <div class="perguntas">
+        <details>
+          <summary>Quem conta como funcionário?</summary>
+          <p>Cada pessoa que aparece na escala do mês. Quem foi desligado deixa de contar a partir do mês seguinte.</p>
+        </details>
+        <details>
+          <summary>E se a equipe crescer?</summary>
+          <p>O valor acompanha o número de pessoas na escala. Se a equipe crescer ou diminuir, o valor do mês seguinte é ajustado.</p>
+        </details>
+        <details>
+          <summary>Como funciona o pagamento?</summary>
+          <p>O plano mensal é cobrado todo mês. O anual pode ser pago em até 12 vezes sem juros no cartão ou à vista no Pix, com desconto. A implantação pode ser parcelada em até 3 vezes sem juros.</p>
+        </details>
+        <details>
+          <summary>Posso cancelar?</summary>
+          <p>Sim. No plano mensal, você cancela quando quiser, sem multa. O mês já pago não é devolvido.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="chamada" aria-labelledby="titulo-chamada">
+    <div class="container">
+      <div>
+        <h2 id="titulo-chamada">Quer o valor exato para a sua empresa?</h2>
+        <p>Conte quantas pessoas tem na escala e como ela funciona. Você recebe a proposta por link.</p>
+      </div>
+      <a class="botao botao-claro" href="contato.html?assunto=testar">Pedir proposta</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="rodape-grade">
+      <div>
+        <img src="img/logo-branco.png" alt="Codyla" width="480" height="342">
+        <p>Sistemas web simples para tarefas do dia a dia das empresas.</p>
+      </div>
+      <div>
+        <h3>Produtos</h3>
+        <ul>
+          <li><a href="codyla-folgas.html">Codyla Folgas</a></li>
+          <li><a href="precos.html">Preços</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Codyla</h3>
+        <ul>
+          <li><a href="index.html#sobre">Sobre</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Legal</h3>
+        <ul><li><a href="privacidade.html">Política de privacidade</a></li></ul>
+      </div>
+    </div>
+    <div class="rodape-base">© <span class="ano">2026</span> Codyla · codyla.com.br</div>
+  </div>
+</footer>
+
+<script src="js/site.js"></script>
+<script src="js/precos.js"></script>
+</body>
+</html>
