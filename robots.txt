@@ -1,0 +1,7 @@
+# Regras para os buscadores (Google e outros)
+User-agent: *
+Allow: /
+Disallow: /proposta-exemplo.html
+Disallow: /obrigado.html
+
+Sitemap: https://codyla.com.br/sitemap.xml
