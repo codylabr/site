@@ -1,6 +1,5 @@
 // Proposta de exemplo: mostra como o cliente vai ver a proposta.
 // Nesta versão nada é enviado: aprovar e pedir ajuste só mudam a tela.
-// Na versão de verdade, quem responde é o sistema (Administração > Propostas) e você é avisado por e-mail.
 (() => {
   // Número do WhatsApp do Codyla, só números, com 55 e DDD. Ex.: "5521999999999".
   // Enquanto estiver vazio, os botões levam para a página de contato.
@@ -8,7 +7,7 @@
   const EMPRESA = "Transportes Rio Norte";
 
   if (WHATSAPP) {
-    const texto = encodeURIComponent("Olá, Flavio! Tenho uma dúvida sobre a proposta da " + EMPRESA + ".");
+    const texto = encodeURIComponent("Olá, Flávio! Tenho uma dúvida sobre a proposta da " + EMPRESA + ".");
     document.querySelectorAll("[data-whatsapp]").forEach(link => {
       link.href = "https://wa.me/" + WHATSAPP + "?text=" + texto;
       link.target = "_blank";
@@ -39,7 +38,7 @@
     form.hidden = true;
     form.reset();
     botaoAjustes.setAttribute("aria-expanded", "false");
-    aviso.textContent = "Pedido enviado. O Flavio responde com a proposta ajustada em até 1 dia útil.";
+    aviso.textContent = "Pedido enviado. O Flávio responde com a proposta ajustada em até 1 dia útil.";
     aviso.hidden = false;
   });
 

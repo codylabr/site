@@ -7,6 +7,15 @@ if (botaoMenu && navegacao) {
     botaoMenu.setAttribute("aria-expanded", aberto);
     botaoMenu.textContent = aberto ? "Fechar" : "Menu";
   });
+  const fecharMenu = () => {
+    if (!navegacao.classList.contains("aberta")) return;
+    navegacao.classList.remove("aberta");
+    botaoMenu.setAttribute("aria-expanded", "false");
+    botaoMenu.textContent = "Menu";
+  };
+  // Clicar num link do menu (ex.: "Sobre" na própria página) ou apertar Esc fecha o menu
+  navegacao.addEventListener("click", e => { if (e.target.closest("a")) fecharMenu(); });
+  document.addEventListener("keydown", e => { if (e.key === "Escape") { fecharMenu(); } });
 }
 
 // Escala de exemplo (aparece onde existir #grade)

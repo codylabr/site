@@ -23,6 +23,9 @@
 
   /** Duas caixinhas: cartão (valor cheio parcelado) e Pix (à vista, com a economia). */
   function opcoes(cartao, parcelas, pix) {
+    // Arredonda os totais antes de calcular a economia, para a conta bater com o que aparece na tela
+    cartao = Math.round(cartao);
+    pix = Math.round(pix);
     const parcela = Math.round(cartao / parcelas * 100) / 100;
     return '<span class="opcoes-pagamento">'
       + '<span class="opcao"><small>Cartão</small><b>' + reais(cartao) + '</b>'
