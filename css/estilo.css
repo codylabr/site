@@ -371,3 +371,4 @@ footer .rodape-base a{color:var(--gelo)}
 .plano-normal s{text-decoration-thickness:1px}
 .plano-destaque .plano-normal{color:var(--gelo)}
 .plano-forma{display:block;margin-top:.15rem;font-size:.82rem}
+.em-breve-produto{margin-top:1.25rem;display:inline-block;border:1px dashed var(--vivo);border-radius:var(--raio);padding:.6rem 1rem;color:var(--royal);font-size:.95rem}
