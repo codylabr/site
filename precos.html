@@ -27,6 +27,7 @@
           <li><a href="contato.html">Contato</a></li>
         </ul>
       </nav>
+      <a class="link-entrar" href="https://app.codyla.com.br/login.html">Entrar</a>
       <a class="botao botao-claro botao-pequeno" href="contato.html?assunto=testar">Pedir proposta</a>
     </div>
   </div>
@@ -35,9 +36,9 @@
 <main>
   <section class="abertura abertura-curta" aria-labelledby="titulo">
     <div class="container">
-      <span class="status">Valores de exemplo · em definição</span>
+      <span class="status">Preço de fundador · 10 primeiras empresas</span>
       <h1 id="titulo">Você paga pelo tamanho da sua equipe.</h1>
-      <p>O valor do Codyla Folgas acompanha o número de funcionários na escala. Escolha quantas pessoas a sua empresa tem e veja quanto fica por mês.</p>
+      <p>O valor do Codyla Folgas acompanha o número de funcionários na escala. Escolha quantas pessoas a sua empresa tem e veja quanto fica por mês. As 10 primeiras empresas têm preço de fundador, garantido por 12 meses.</p>
     </div>
   </section>
 
@@ -54,16 +55,17 @@
         <fieldset class="calc-periodo">
           <legend>Forma de contratação</legend>
           <label><input type="radio" name="periodo" value="mensal" checked> Mensal</label>
-          <label><input type="radio" name="periodo" value="anual"> Anual <span class="selo-desconto">15% menos</span></label>
+          <label><input type="radio" name="periodo" value="anual"> Anual <span class="selo-desconto">até 15% menos</span></label>
         </fieldset>
       </div>
 
       <h2 id="titulo-planos" class="sr-only">Planos</h2>
       <div class="planos" id="planos">
-        <article class="plano" data-por-funcionario="2.70">
+        <article class="plano" data-por-funcionario="2.70" data-minimo="37" data-normal="3.40">
           <h3>Essencial</h3>
           <p class="plano-para">Para quem monta a escala sozinho e quer o básico bem feito.</p>
-          <p class="plano-preco"><strong data-preco>R$ 108</strong><span>/mês</span></p>
+          <p class="plano-normal" data-normal-texto></p>
+          <p class="plano-preco"><strong data-preco><span class="moeda">R$</span>108</strong><span>/mês</span></p>
           <p class="plano-pagamento" data-pagamento>R$ 2,70 por funcionário, cobrado todo mês</p>
           <ul class="plano-itens">
             <li>Escala do mês com as regras da empresa</li>
@@ -74,11 +76,12 @@
           <a class="botao botao-contorno-escuro" href="contato.html?assunto=testar">Pedir proposta</a>
         </article>
 
-        <article class="plano plano-destaque" data-por-funcionario="3.00">
+        <article class="plano plano-destaque" data-por-funcionario="3.00" data-minimo="47" data-normal="3.90">
           <span class="plano-selo">Mais escolhido</span>
           <h3>Recomendado</h3>
           <p class="plano-para">Para o RH e o DP que querem tirar dúvidas na hora.</p>
-          <p class="plano-preco"><strong data-preco>R$ 120</strong><span>/mês</span></p>
+          <p class="plano-normal" data-normal-texto></p>
+          <p class="plano-preco"><strong data-preco><span class="moeda">R$</span>120</strong><span>/mês</span></p>
           <p class="plano-pagamento" data-pagamento>R$ 3,00 por funcionário, cobrado todo mês</p>
           <ul class="plano-itens">
             <li>Tudo do Essencial</li>
@@ -88,10 +91,11 @@
           <a class="botao botao-claro" href="contato.html?assunto=testar">Pedir proposta</a>
         </article>
 
-        <article class="plano" data-por-funcionario="3.90">
+        <article class="plano" data-por-funcionario="3.90" data-minimo="59" data-normal="4.90">
           <h3>Prioritário</h3>
           <p class="plano-para">Para equipes grandes ou com escalas mais complicadas.</p>
-          <p class="plano-preco"><strong data-preco>R$ 156</strong><span>/mês</span></p>
+          <p class="plano-normal" data-normal-texto></p>
+          <p class="plano-preco"><strong data-preco><span class="moeda">R$</span>156</strong><span>/mês</span></p>
           <p class="plano-pagamento" data-pagamento>R$ 3,90 por funcionário, cobrado todo mês</p>
           <ul class="plano-itens">
             <li>Tudo do Recomendado</li>
@@ -101,7 +105,7 @@
           <a class="botao botao-contorno-escuro" href="contato.html?assunto=testar">Pedir proposta</a>
         </article>
       </div>
-      <p class="nota-exemplo">Valores de exemplo, ainda em definição. Os valores finais vêm na proposta para a sua empresa.</p>
+      <p class="nota-exemplo">Preço de fundador para as 10 primeiras empresas, garantido por 12 meses a partir da contratação. Depois desse período, vale o preço normal. Equipes pequenas pagam o valor mínimo de cada plano.</p>
     </div>
   </section>
 
@@ -112,12 +116,12 @@
       <ul class="implantacao" id="implantacao">
         <li>
           <strong>Só o acesso</strong>
-          <span>Você mesmo cadastra a equipe. Mandamos um vídeo com o passo a passo.</span>
+          <span>Você mesmo cadastra a equipe, seguindo um passo a passo com imagens que enviamos para você.</span>
           <p class="impl-preco"><b>Sem custo</b></p>
         </li>
         <li data-por-funcionario="3" data-fixo="0">
           <strong>Cadastro da equipe</strong>
-          <span>Você manda a planilha dos funcionários e a gente cadastra tudo para você.</span>
+          <span>Você envia a planilha dos funcionários e nós cadastramos tudo para você.</span>
           <p class="impl-preco" data-impl></p>
         </li>
         <li data-por-funcionario="3" data-fixo="400">
@@ -168,7 +172,11 @@
         </details>
         <details>
           <summary>Como funciona o pagamento?</summary>
-          <p>O plano mensal é cobrado todo mês. O anual pode ser pago em até 12 vezes sem juros no cartão ou à vista no Pix, com desconto. A implantação pode ser parcelada em até 3 vezes sem juros.</p>
+          <p>O plano mensal é cobrado todo mês, no Pix, no boleto ou no cartão. Com o cartão cadastrado, a cobrança é automática e você não precisa se lembrar. O anual pode ser pago em até 12 vezes sem juros no cartão ou à vista no Pix, com o maior desconto. A implantação pode ser parcelada em até 3 vezes sem juros no cartão ou paga à vista no Pix, com desconto.</p>
+        </details>
+        <details>
+          <summary>E se eu esquecer de pagar?</summary>
+          <p>Você recebe lembretes antes e depois do vencimento. Se o pagamento atrasar mais de 10 dias, o acesso é suspenso até a regularização. Nenhum dado é apagado: assim que o pagamento é confirmado, o acesso volta exatamente como estava. Depois de 90 dias sem pagamento, o contrato é encerrado e os dados são excluídos, conforme os Termos de Uso.</p>
         </details>
         <details>
           <summary>Posso cancelar?</summary>

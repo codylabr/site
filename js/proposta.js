@@ -4,7 +4,7 @@
 (() => {
   // Número do WhatsApp do Codyla, só números, com 55 e DDD. Ex.: "5521999999999".
   // Enquanto estiver vazio, os botões levam para a página de contato.
-  const WHATSAPP = "";
+  const WHATSAPP = "5521965177452";
   const EMPRESA = "Transportes Rio Norte";
 
   if (WHATSAPP) {

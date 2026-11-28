@@ -37,6 +37,8 @@ a{color:inherit}
 .menu a{text-decoration:none;color:var(--gelo)}
 .menu a:hover,.menu a[aria-current="page"]{color:var(--branco)}
 .menu a[aria-current="page"]{text-decoration:underline;text-underline-offset:6px;text-decoration-thickness:2px}
+.link-entrar{color:var(--gelo);font-weight:600;text-decoration:none;border:2px solid rgba(255,255,255,.45);border-radius:var(--raio);padding:.45rem 1rem;margin-right:-1rem}
+.link-entrar:hover{color:var(--branco);border-color:var(--branco)}
 .botao-menu{display:none;background:none;border:2px solid rgba(255,255,255,.5);color:var(--branco);border-radius:8px;padding:.45rem .8rem;font:inherit;font-weight:600;cursor:pointer}
 
 /* ---------- Botões ---------- */
@@ -213,6 +215,7 @@ footer{background:var(--noite);color:var(--gelo);padding:4rem 0 2rem;font-size:.
     background:var(--noite);padding:1.25rem;border-radius:12px;box-shadow:0 20px 40px -20px rgba(0,0,0,.5);
   }
   .navegacao.aberta{display:flex}
+  .link-entrar{text-align:center;margin-right:0}
   .menu{flex-direction:column;gap:.9rem}
 }
 @media (max-width:520px){
@@ -349,3 +352,22 @@ footer .rodape-base a{color:var(--gelo)}
   .proposta-acoes .botao{flex:1 1 100%}
   .proximos-passos{padding:1.5rem}
 }
+
+/* Preços: "R$" pequeno ao lado do número; cartão e Pix lado a lado */
+.plano-preco strong .moeda{font-size:.42em;font-weight:600;vertical-align:.95em;margin-right:.18em;letter-spacing:0;opacity:.75}
+.opcoes-pagamento{display:grid;grid-template-columns:1fr 1fr;gap:.5rem;margin-top:.45rem}
+.opcao{display:block;border:1px solid var(--linha);border-radius:var(--raio);padding:.55rem .7rem;font-size:.82rem;line-height:1.35;color:var(--texto-suave)}
+.opcao small{display:block;font-size:.75rem;font-weight:600;text-transform:none;color:var(--texto-suave)}
+.opcao b{display:block;font-size:1.1rem;color:var(--texto);font-variant-numeric:tabular-nums}
+.opcao-pix{border-color:var(--vivo);background:#EAF3FD}
+.opcao-pix b,.opcao-pix{color:var(--royal)}
+.plano-destaque .opcao{border-color:rgba(255,255,255,.28);color:var(--gelo)}
+.plano-destaque .opcao small,.plano-destaque .opcao b{color:var(--branco)}
+.plano-destaque .opcao-pix{background:rgba(59,156,240,.22);border-color:var(--vivo)}
+.impl-preco .opcoes-pagamento{margin-top:0}
+.implantacao .opcao{color:var(--texto-suave)}
+.implantacao .opcao-pix{color:var(--royal)}
+.plano-normal{margin:.75rem 0 -.4rem;font-size:.85rem;color:var(--texto-suave)}
+.plano-normal s{text-decoration-thickness:1px}
+.plano-destaque .plano-normal{color:var(--gelo)}
+.plano-forma{display:block;margin-top:.15rem;font-size:.82rem}
